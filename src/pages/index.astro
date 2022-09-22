@@ -8,6 +8,12 @@ import Masthead from '../components/Masthead.astro';
 import { SITE_TITLE, SITE_DESCRIPTION, HOMEPAGE_URL } from '../config';
 
 import { IoArrowForward } from 'react-icons/io5';
+
+const posts = (await Astro.glob('./blogs/*/index.{md,mdx}')).sort(
+	(a: any, b: any) => 
+    new Date(b.frontmatter.pubDate).valueOf() - 
+    new Date(a.frontmatter.pubDate).valueOf()
+);
 ---
 
 <!DOCTYPE html>
@@ -19,7 +25,6 @@ import { IoArrowForward } from 'react-icons/io5';
 		<Header title={SITE_TITLE} />
 		<main class="pt-[56px] ">
       <Masthead />
-      <h1 class="font-mplus text-center">What I use</h1>
       <Content>
         <section>
           <p class="mb-5 indent-4">
@@ -36,6 +41,18 @@ import { IoArrowForward } from 'react-icons/io5';
               >Learn more about me <IoArrowForward className="inline" />
             </a>
           </p>
+        </section>
+        <section>
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {posts.map((post) => (
+              <li class="text-center mb-4">
+                <a href={post.url}>
+                  <div class="mt-3 text-xl">{post.frontmatter.title}</div>
+                  <div class="opacity-70">{post.frontmatter.description}</div>
+                </a>
+              </li>
+            ))}
+          </ul>
         </section>
       </Content>
 		</main>
