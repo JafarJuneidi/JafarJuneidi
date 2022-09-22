@@ -12,14 +12,13 @@ import { BiMessageAltError } from 'react-icons/bi';
     <nav class="flex items-center gap-3 text-base">
       <a href="/" class="group">
         <h2 class="font-semibold tracking-tighter p-2 font-mplus text-lg flex items-center">
-          <BiMessageAltError className="mr-1"/>
+          <BiMessageAltError className="mr-1 transition-transform group-hover:rotate-[-20deg]"/>
           {SITE_TITLE}
         </h2>
       </a>
       <div class="items-center gap-6 hidden md:flex">
-        <HeaderLink href="/about">About</HeaderLink>
-        <HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink>
-        <HeaderLink href="https://github.com/withastro/astro" target="_blank"><IoLogoGithub /> GitHub</HeaderLink>
+        <HeaderLink href="https://twitter.com/jafar_juneidi0" target="_blank">Twitter</HeaderLink>
+        <HeaderLink href="https://github.com/jafarjuneidi" target="_blank"><IoLogoGithub /> GitHub</HeaderLink>
       </div>
       <div class="flex-1"></div>
       <ThemeToggleButton client:load/>
