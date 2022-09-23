@@ -1,7 +1,12 @@
 ---
+import HeaderLink from './HeaderLink.astro';
 const today = new Date();
 ---
 
-<footer class="text-zinc-500 p-4 text-center">
-	&copy; {today.getFullYear()} Jafar Juneidi. All rights reserved.
+<footer class="p-4 flex flex-col items-center justify-center">
+	<div class="text-zinc-500 text-center">&copy; {today.getFullYear()} Jafar Juneidi. All rights reserved.</div>
+  <div class="text-orange-500 items-center gap-6 flex">
+    <HeaderLink href="https://twitter.com/jafar_juneidi0" target="_blank">Twitter</HeaderLink>
+    <HeaderLink href="https://github.com/jafarjuneidi" target="_blank">GitHub</HeaderLink>
+  </div>
 </footer>
