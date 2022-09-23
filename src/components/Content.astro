@@ -3,9 +3,9 @@ export interface Props {
   ClassName?: string
 }
 
-const { ClassName = '' }  = Astro.props
+const { className = '' }  = Astro.props
 ---
 
-<article class={`px-8 mx-auto max-w-3xl ${ClassName}`}>
+<article class={`px-8 mx-auto max-w-3xl ${className}`}>
   <slot />
 </article>
