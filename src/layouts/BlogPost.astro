@@ -4,6 +4,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Body from "../components/Body.astro";
 import Content from "../components/Content.astro";
+import Signup from "../components/Signup";
 
 export interface Props {
 	content: {
@@ -45,7 +46,8 @@ const {
         <div>{description}</div>
         <hr class="border-top border-zinc-400 my-4"/>
         <slot />
-        <span class="underline underline-offset-2 hover:text-orange-500 decoration-orange-500 font-bold"/>
+        <span class="underline underline-offset-2 hover:text-blue-500 decoration-blue-500 font-bold"/>
+        <Signup />
       </Content>
 		</main>
 		<Footer />
