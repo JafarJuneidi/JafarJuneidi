@@ -7,7 +7,7 @@ import Content from '../components/Content.astro';
 import Masthead from '../components/Masthead.astro';
 import { SITE_TITLE, SITE_DESCRIPTION, HOMEPAGE_URL } from '../config';
 
-import { IoArrowForward } from 'react-icons/io5';
+import { IoArrowForward } from 'react-icons/io5/index.js';
 
 const posts = (await Astro.glob('./blogs/*/index.{md,mdx}')).sort(
 	(a: any, b: any) => 
