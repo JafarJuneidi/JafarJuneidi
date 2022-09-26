@@ -17,13 +17,14 @@ export interface Props {
 }
 
 const {
-	content: { title, description, pubDate },
+	content: { title, description, pubDate, url },
 } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+    <meta rel="canonical" href={new URL(url, Astro.site).pathname}>
 		<BaseHead title={title} description={description} />
 	</head>
 
@@ -32,16 +33,20 @@ const {
 		<main class="pt-[56px]">
       <Content className="pt-6">
         <h1 class="mt-3 text-6xl text-blue-500 font-extrabold">{title}</h1>
-        <time datetime={pubDate}>
-          {new Date(pubDate).toLocaleDateString('en-us', {
-            year: 'numeric',
-            month: 'short',
-            day: 'numeric',
-          })}
-        </time>
-        <div>{description}</div>
+        <div class="ml-1">
+          <time datetime={pubDate}>
+            {new Date(pubDate).toLocaleDateString('en-us', {
+              year: 'numeric',
+              month: 'short',
+              day: 'numeric',
+            })}
+          </time>
+          <div>{description}</div>
+        </div>
         <hr class="border-top border-zinc-400 my-4"/>
-        <slot />
+        <div class="prose prose-blue max-w-none dark:prose-invert">
+          <slot />
+        </div>
         <span class="underline underline-offset-2 hover:text-blue-500 decoration-blue-500 font-bold"/>
         <Signup />
       </Content>
