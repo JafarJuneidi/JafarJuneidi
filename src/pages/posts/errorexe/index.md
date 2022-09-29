@@ -1,6 +1,6 @@
 ---
 layout: '../../../layouts/BlogPost.astro'
-title: 'ErrorExe?!'
+title: 'Error.Exe?!'
 description: 'About this blog'
 pubDate: 'Sep 26 2022'
 ---
