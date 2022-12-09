@@ -15,7 +15,7 @@ I've been learning rust recently, and I thought this would be a nice opportunity
 Full code is on my Github.  
 Questions could be found on the [Advent of Code website](https://adventofcode.com/2022)
 
-## Day 1
+## Day 1: Calorie Counting
 
 With <mark>include_str!</mark> I embed the input in the binary (I'll be using this a lot throught the following days).
 Then I split the input by two new lines <mark>"\n\n"</mark> and map over each split. Then I further split each group into lines, parsing each line then flattening the map and summing the results.  
@@ -38,7 +38,7 @@ fn main() {
 }
 ```
 
-## Day 2
+## Day 2: Rock Paper Scissors
 
 credit to [ThePrimeagen](https://twitter.com/ThePrimeagen) for the inspiration.
 
@@ -144,7 +144,7 @@ fn main() -> Result<()> {
 }
 ```
 
-## Day 3
+## Day 3: Rucksack Reorganization
 
 for day 3 I created the following helper function that resturns a 64 bit unsigned int.  
 Each bit represents the presence or absence of an english letter at that index.
@@ -198,7 +198,7 @@ fn main() -> Result<()> {
     Ok(())
 ```
 
-# Day 4
+## Day 4: Camp Cleanup
 
 Day 4 was really simple.  
 I just split the input and filter lines by <mark>is_contained</mark> or <mark>is_overlapping</mark> and count their number
@@ -254,7 +254,7 @@ fn main() -> Result<()> {
 }
 ```
 
-## Day 5
+## Day 5: Supply Stacks
 
 For day 5 I first split the input into the initial state, let's call it <mark>start</mark> and <mark>moves</mark>.  
 And I created a stack for part 1 and another for part 2.
@@ -314,7 +314,7 @@ After that I mapped over the <mark>moves</mark> and manipulated the stacks accor
         });
 ```
 
-## Day 6
+## Day 6: Tuning Trouble
 
 Day 6 was a straight forward sliding window problem.  
 I created a function that walks over the input with the specified window size using the <mark>position</mark> function,
@@ -343,7 +343,7 @@ fn sliding_window(input: &str, win_size: usize) -> usize {
 }
 ```
 
-## Day 7
+## Day 7: No Space Left On Device
 
 I created a <mark>Dir</mark> struct that hold it's own <mark>size</mark> and a vector of the <mark>entries</mark> inside, which are <mark>Dir</mark>s.
 Then I implemented a a recursive <mark>new</mark> function that creates a <mark>Dir</mark> from an iterator on the input slices, and spits out a <mark>Dir</mark>
