@@ -13,6 +13,16 @@ body {
   overflow-wrap: break-word;
 }
 
+/* highligh mark styles */
+mark {
+  background-color: #d9dcd9;
+  color: #6e6b5e;
+  overflow-x: initial;
+  display: inline;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+
 /* Newsletter form styling from convertKit */
 /* Copied from Dan Abramov's blog: https://github.com/gaearon/overreacted.io */
 .formkit-form * {
