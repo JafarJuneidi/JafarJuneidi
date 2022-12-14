@@ -2,6 +2,6 @@ I'm an aspiring full-stack software engineer, curious about everything tech rela
 
 I love improving people's lives with tech solutions.
 
-Currently working on web development with anything react related and learning Rust during free time.
+Currently working working on my graduation project, leetcoding, and learning Rust during my free time.
 
 vim crew :sunglasses:
