@@ -1,7 +1,7 @@
 ---
 layout: '../../../layouts/BlogPost.astro'
-title: 'Error.Exe?!'
-description: 'About this blog'
+title: "Blog's name"
+description: 'Why I wanted to name the blog "Error.Exe?!" and why it was a bad idea'
 pubDate: 'Sep 26 2022'
 ---
 
@@ -31,6 +31,10 @@ I'd like to think that those conversation's with Mo - either directly or indirec
 And I'm very happy were I am. So I found it appropriate to name my first blog with something from that past.
 
 "ErrorExe" will stick with me for as long as I code.
+
+## Why I changed the name
+
+Seeing the word "error" when first enter a website confused too many people, and ultimately, the "error" doesn't really have a positive ring to it 🙂
 
 ## Content
 
