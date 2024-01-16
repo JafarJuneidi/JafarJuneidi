@@ -1,4 +1,4 @@
-I'm an aspiring full-stack software engineer, curious about everything tech related.
+I'm a full-stack software engineer, curious about everything tech related.
 
 I love improving people's lives with tech solutions.
 
