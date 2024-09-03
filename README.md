@@ -1,5 +1,1 @@
-I'm a software engineer, curious about everything tech related.
-
-I love meeting new people.
-
-vim :sunglasses:
+I'm curious about everything tech related and I love meeting new people.
